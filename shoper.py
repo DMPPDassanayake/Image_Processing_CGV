@@ -33,6 +33,12 @@ def preprocess_image(image_path):
     cv2.imshow('Binary Image', binary)
     cv2.waitKey(0)
     cv2.destroyAllWindows()
+    
+    print("Applying binary thresholding...")
+    _, binary = cv2.threshold(gray, 0, 255, cv2.THRESH_BINARY | cv2.THRESH_OTSU)
+    cv2.imshow('Binary Image', binary)
+    cv2.waitKey(0)
+    cv2.destroyAllWindows()
 
     return binary
 
