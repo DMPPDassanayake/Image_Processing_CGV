@@ -26,6 +26,10 @@ if __name__ == "__main__":
     main()
 
 def visual():
+    plt.xlabel('Item Name')
+    plt.ylabel('Quantity Sold')
 
 def load():
+    plt.xlabel('Item Name')
+    plt.ylabel('Quantity Sold')
     
