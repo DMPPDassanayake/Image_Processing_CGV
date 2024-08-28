@@ -1,0 +1,76 @@
+{
+    "all_data": [
+        "RESTAURANT",
+        "",
+        "Lorem leew ty",
+        "",
+        "City inden - Oa,",
+        "",
+        "ToL: +123-466-788-01",
+        "",
+        "CASH RECEIPT",
+        "",
+        "syreceatst:2eptnazaains",
+        "Tabte 12 Cashiers",
+        "Bis 000-000 212.2020",
+        "Chichen Carry 1 100",
+        "Fried Chichen, 2 woo",
+        "CheeseBurger 2 @00",
+        "Beer 2 @00",
+        "Water 2 200",
+        "Ketchup 1 woo",
+        "Soy Seuce 1 100",
+        "Other 2 woo",
+        "tnngstsasazesusrtssusuepeanananeaeaaa:",
+        "Sub Total 51.00",
+        "Cast e200",
+        "Change 00",
+        "",
+        "Thank Your",
+        "",
+        "Proase Come Again",
+        "_ _"
+    ],
+    "items": [
+        {
+            "name": "Chichen Carry",
+            "quantity": 1,
+            "price": "100"
+        },
+        {
+            "name": "Fried Chichen, woo",
+            "quantity": 1,
+            "price": "2"
+        },
+        {
+            "name": "CheeseBurger",
+            "quantity": 2,
+            "price": "@00"
+        },
+        {
+            "name": "Beer",
+            "quantity": 2,
+            "price": "@00"
+        },
+        {
+            "name": "Water",
+            "quantity": 2,
+            "price": "200"
+        },
+        {
+            "name": "Ketchup woo",
+            "quantity": 1,
+            "price": "1"
+        },
+        {
+            "name": "Soy Seuce",
+            "quantity": 1,
+            "price": "100"
+        },
+        {
+            "name": "Other woo",
+            "quantity": 1,
+            "price": "2"
+        }
+    ]
+}
