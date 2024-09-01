@@ -70,7 +70,7 @@ def parse_receipt_text(text):
                     quantity = 1
                     name = ' '.join(parts[:i] + parts[i+1:])
                     # Check if the name is not empty and does not contain keywords like "Tabte", "Bis", etc.
-                    if name and not any(keyword in name for keyword in ["Tabte", "Bis", "Sub Total", "Cast", "Change", "Thank", "Proase"]):
+                    if name and not any(keyword in name for keyword in ["Tabte", "Bis", "Sub Total", "Cast", "Change", "Thank", "Proase", "Table", "Please", "Cash", "Bill"]):
                         items.append({"name": name, "quantity": quantity, "price": price})
                         break
 
