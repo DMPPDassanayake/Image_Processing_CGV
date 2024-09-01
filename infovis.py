@@ -12,7 +12,7 @@ def visualize_sales(items):
     plt.figure(figsize=(10, 6))
     plt.bar(names, quantities)
     plt.title('Sales by Item')
-    plt.xlabel('Item Name')
+    plt.xlabel('Name of Item')
     plt.ylabel('Quantity Sold')
     plt.xticks(rotation=45, ha='right')
     plt.tight_layout()
