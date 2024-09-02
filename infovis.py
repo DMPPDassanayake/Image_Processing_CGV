@@ -9,8 +9,14 @@ def visualize_sales(items):
     names = [item['name'] for item in items]
     quantities = [item['quantity'] for item in items]
 
+    max_quantity = max(quantities)
+
     plt.figure(figsize=(10, 6))
-    plt.bar(names, quantities)
+    for name, quantity in zip(names, quantities):
+        if quantity == max_quantity:
+            plt.bar(name, quantity, color='r')  # red color for the highest quantity
+        else:
+            plt.bar(name, quantity, color='b')  # blue color for the rest
     plt.title('Sales by Item')
     plt.xlabel('Name of Item')
     plt.ylabel('Quantity Sold')
