@@ -1,9 +1,17 @@
 import matplotlib.pyplot as plt
 import json
 
+
+
 def load_data(filename):
-    with open(filename, 'r') as f:
-        return json.load(f)
+    if not os.path.exists(filename):
+        raise FileNotFoundError(f"The file '{filename}' does not exist.")
+    
+    try:
+        with open(filename, 'r') as f:
+            return json.load(f)
+    except json.JSONDecodeError as e:
+        raise ValueError(f"Failed to decode JSON from the file '{filename}'. Error: {e}")
 
 def visualize_sales(items):
     names = [item['name'] for item in items]
