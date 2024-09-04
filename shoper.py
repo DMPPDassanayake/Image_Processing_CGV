@@ -98,18 +98,3 @@ if __name__ == "__main__":
     
     image_path = sys.argv[1]
     main(image_path)
-def preprocess_image(image_path):
-    print("Loading image...")
-    
-    # Load the image
-    img = cv2.imread(image_path)
-    
-    # Error handling: Check if the image was successfully loaded
-    if img is None:
-        print(f"Error: Unable to load image from {image_path}. Please check the file path and try again.")
-        sys.exit(1)
-
-    # Display the original image
-    cv2.imshow('Original Image', img)
-    cv2.waitKey(0)
-    cv2.destroyAllWindows()
