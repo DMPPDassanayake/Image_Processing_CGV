@@ -1,17 +1,9 @@
 import matplotlib.pyplot as plt
 import json
 
-
-
 def load_data(filename):
-    if not os.path.exists(filename):
-        raise FileNotFoundError(f"The file '{filename}' does not exist.")
-    
-    try:
-        with open(filename, 'r') as f:
-            return json.load(f)
-    except json.JSONDecodeError as e:
-        raise ValueError(f"Failed to decode JSON from the file '{filename}'. Error: {e}")
+    with open(filename, 'r') as f:
+        return json.load(f)
 
 def visualize_sales(items):
     names = [item['name'] for item in items]
@@ -20,7 +12,7 @@ def visualize_sales(items):
     max_quantity = max(quantities)
 
     plt.figure(figsize=(10, 6))
-    for name, quantity in zip(names, quantities):
+    for name, quantity in zip(names, quantities):  # Fixed indentation here
         if quantity == max_quantity:
             plt.bar(name, quantity, color='r')  # red color for the highest quantity
         else:
@@ -38,6 +30,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-
-    
